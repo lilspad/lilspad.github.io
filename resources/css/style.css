@@ -11,17 +11,17 @@
         text-align: center;
     }
     
-    .link {
+    a {
         font-size: 16px;
         color: aquamarine;
         text-decoration: underline;
     }
 
-    .link:visited {
+    a:visited {
         color: purple;
     }
 
-    .link:hover {
+    a:hover {
         color: green;
     }
     
