@@ -18,6 +18,7 @@
     
     video {
         margin: 0 auto;
+        display: block;
     }
     
     h2 {
