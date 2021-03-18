@@ -17,7 +17,8 @@
     }
     
     video {
-        display: block;
+        position: absolute;
+        margin: 0 auto;
     }
     
     h2 {
