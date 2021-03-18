@@ -16,8 +16,14 @@
         color: aquamarine;
     }
     
+    .phone {
+        position: relative; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     video {
-        position: absolute;
+        position: relative;
         margin: 0 auto;
     }
     
@@ -33,6 +39,7 @@
     
     img {
         margin: 10px auto;
+        display: block;
     }
     
     .copyright {
