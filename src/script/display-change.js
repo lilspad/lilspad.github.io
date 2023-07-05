@@ -37,11 +37,11 @@ function displayShapes(shapeClass, modeName) {
 //ABOUT
 
 let bio = "Hi! 👋 I'm Lily, a software engineer learning, creating and enjoying life in <span>London</span>.<br>"+
-"As any good escapist I love films, games and music, but I also have an abnormal creativity level which leads me to make... phew, anything from bread to knitwear to websites.<br>"+
+"As any good escapist I love films, games and music, but I also have an abnormal creativity level which leads me to make... well, anything from bread to knitwear to websites.<br>"+
 "I've worked in the coffee industry for almost 7 years, so I can also make a great pick-me-up in a mug. Although, I decided to finally leave hospitality to pursue a career in tech."
 
-let skills = "I first came face-to-face with coding in school, where I did extracurricular computer science. I learnt <span>Python</span> basics I still remember to this day. Then, I began " +
-"a self-stufy journey in 2021, with many disruptions due to work-life (un)balance. Using resources across the web I learnt how to build websites using <span>HTML, CSS/Sass and JavaScript</span>, " +
+let skills = "I first came face-to-face with coding in school, where I did extracurricular computer science. I learned <span>Python</span> basics I still remember to this day. Then I began " +
+"a self-stufy journey in 2021, with many disruptions due to work-life (un)balance. Using resources across the web I learned how to build websites using <span>HTML, CSS/Sass and JavaScript</span>, " +
 "as well as their many extensions, libraries and frameworks. I played around with some projects utilising <span>React, Node, Tailwind, SQL</span> and more. For all of them, I use <span>git</span> version control " +
 "and <span>ChromeDevTools</span> to aid me in the building process, and <span>GitHub</span> to share my code. "
 
@@ -97,6 +97,27 @@ about.addEventListener('click', () => {
             }
 
             console.log('about case2 done')
+            break;
+        case 'works':
+            hideShapes('project');
+            displayShapes('info', 'about');
+            document.getElementById('about-title').innerText = 'BACK'
+            document.getElementById('about-title').classList.add('back');
+            document.getElementById('more-about').style.display = 'flex';
+            document.getElementById('works-title').innerText = 'WORKS'
+            document.getElementById('works-title').classList.remove('back');
+            document.getElementById('repositories').style.display = 'none';
+
+            if (matchMedia('all and (orientation:landscape)').matches) {
+                about.style.width = '40%';
+                works.style.width = '40%';
+                document.querySelectorAll('.secondary-container')[0].style.width = '100%';
+                document.querySelectorAll('.secondary-container')[1].style.width = '100%';
+            } else if (matchMedia('all and (orientation: portrait)').matches) {
+                about.style.minHeight = '130px';
+                works.style.minHeight = '130px';
+            }
+            console.log('about case3 done')
             break;
     }
 })
@@ -176,6 +197,28 @@ works.addEventListener('click', () => {
                 document.querySelectorAll('.secondary-container')[1].style.width = 'unset';
             }
             console.log('work case2 done')
+            break;
+        case 'about':
+            hideShapes('info');
+            displayShapes('project', 'works');
+            document.getElementById('works-title').innerText = 'BACK'
+            document.getElementById('works-title').classList.add('back');
+            document.getElementById('repositories').style.display = 'flex';
+            document.getElementById('about-title').innerText = 'ABOUT'
+            document.getElementById('about-title').classList.remove('back');
+            document.getElementById('more-about').style.display = 'none';
+
+            if (matchMedia('all and (orientation:landscape)').matches) {
+                about.style.width = '40%';
+                works.style.width = '40%';
+                document.querySelectorAll('.secondary-container')[0].style.width = '100%';
+                document.querySelectorAll('.secondary-container')[1].style.width = '100%';
+            } else if (matchMedia('all and (orientation: portrait)').matches) {
+                about.style.minHeight = 'unset';
+                works.style.minHeight = 'unset';
+            }
+
+            console.log('works case3 done')
             break;
     }
 })
