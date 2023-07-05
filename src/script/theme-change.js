@@ -3,6 +3,7 @@ const themeButton = document.getElementById('theme');
 const buttons = document.getElementsByClassName("button");
 const heroDisplay = document.getElementById("hero-display");
 const shapes = document.getElementsByClassName("shape");
+const infoItems = document.getElementsByClassName("info-bit")
 const contact = document.querySelector(".contact h3");
 const findMe = document.getElementById("findme");
 
@@ -50,10 +51,9 @@ function setDark() {
         }
     }
 
-    /*for (let i = 0; i < content.length; i++) {
-        content[i].style.outline = "6px solid " + v.darkBackground;
-        content[i].style.backgroundColor = "#00000088";
-    }*/
+    for (let i = 0; i < infoItems.length; i++) {
+        infoItems[i].style.backgroundColor = "#000";
+    }
 
     contact.style.color = "white";
     findMe.style.backgroundColor = v.accentColor2;
@@ -95,10 +95,9 @@ function setLight() {
         }
     }
 
-    /*for (let i = 0; i < content.length; i++) {
-        content[i].style.outline = "6px solid " + v.lightBackground;
-        content[i].style.backgroundColor = "#FFFFFF88";
-    }*/
+    for (let i = 0; i < infoItems.length; i++) {
+        infoItems[i].style.backgroundColor = "#fff";
+    }
 
     contact.style.color = "black";
     findMe.style.backgroundColor = "black";

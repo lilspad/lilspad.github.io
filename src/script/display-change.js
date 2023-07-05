@@ -36,20 +36,24 @@ function displayShapes(shapeClass, modeName) {
 
 //ABOUT
 
-let bio = "Hi! I'm Lily, a software engineer learning, creating and enjoying life in London.<br>"+
-"As any good escapist I love films, games and music, but I also have an abnormal creativity level which leads me to make... phew, anything from bread to knitwear to websites."+
-""
-let skills ='Badibadu'
+let bio = "Hi! 👋 I'm Lily, a software engineer learning, creating and enjoying life in <span>London</span>.<br>"+
+"As any good escapist I love films, games and music, but I also have an abnormal creativity level which leads me to make... phew, anything from bread to knitwear to websites.<br>"+
+"I've worked in the coffee industry for almost 7 years, so I can also make a great pick-me-up in a mug. Although, I decided to finally leave hospitality to pursue a career in tech."
+
+let skills = "I first came face-to-face with coding in school, where I did extracurricular computer science. I learnt <span>Python</span> basics I still remember to this day. Then, I began " +
+"a self-stufy journey in 2021, with many disruptions due to work-life (un)balance. Using resources across the web I learnt how to build websites using <span>HTML, CSS/Sass and JavaScript</span>, " +
+"as well as their many extensions, libraries and frameworks. I played around with some projects utilising <span>React, Node, Tailwind, SQL</span> and more. For all of them, I use <span>git</span> version control " +
+"and <span>ChromeDevTools</span> to aid me in the building process, and <span>GitHub</span> to share my code. "
 
 function createInfoBox(title, info) {
     let infoBox = document.createElement('div');
     infoBox.classList.add('shape', 'info');
-    infoBox.innerHTML = '<h3>' + title + '</h3><p>' + info + '</p>';
+    infoBox.innerHTML = '<h3 class="info-bit">' + title + '</h3><p class="info-bit">' + info + '</p>';
     return infoBox;
 }
 
-let bioBox = createInfoBox('PERSONAL', bio);
-let skillsBox = createInfoBox('PROFESSIONAL', skills);
+let bioBox = createInfoBox('A LITTLE BIT ABOUT ME', bio);
+let skillsBox = createInfoBox('A LITTLE BIT ABOUT CODE', skills);
 
 aboutContent.appendChild(bioBox);
 worksContent.appendChild(skillsBox);
@@ -68,6 +72,9 @@ about.addEventListener('click', () => {
                 works.style.width = '40%';
                 document.querySelectorAll('.secondary-container')[0].style.width = '100%';
                 document.querySelectorAll('.secondary-container')[1].style.width = '100%';
+            } else if (matchMedia('all and (orientation: portrait)').matches) {
+                about.style.minHeight = '130px';
+                works.style.minHeight = '130px';
             }
 
             console.log('about case1 done')
@@ -84,6 +91,9 @@ about.addEventListener('click', () => {
                 works.style.width = 'unset';
                 document.querySelectorAll('.secondary-container')[0].style.width = 'unset';
                 document.querySelectorAll('.secondary-container')[1].style.width = 'unset';
+            } else if (matchMedia('all and (orientation: portrait)').matches) {
+                about.style.minHeight = 'unset';
+                works.style.minHeight = 'unset';
             }
 
             console.log('about case2 done')
