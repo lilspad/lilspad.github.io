@@ -193,6 +193,7 @@ header .container {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    overflow: scroll;
 }
 
 .info p,
@@ -296,7 +297,6 @@ header .container {
     }
     .info {
         justify-content: flex-start;
-        overflow: scroll;
     }
 }
 
