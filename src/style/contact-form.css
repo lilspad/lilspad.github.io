@@ -1,0 +1,59 @@
+form {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    margin: 0.5rem auto;
+    padding: 10px 25px;
+    font: 1rem "Raleway", sans-serif;
+    resize: none;
+    border: 3px solid #C1EE6C;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 3px solid #F23A3A;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#top input {
+    min-width: 200px;
+}
+
+#bottom {
+    height: 40%;
+}
+
+#bottom textarea {
+    height: 100px;
+    width: 100%;
+    min-width: 250px;
+}
+
+#submit {
+    margin: 2% auto;
+    border: none;
+    background-color: #FF0C48;
+    color: white;
+    font-weight: 600;
+}
+
+#submit:hover {
+    background-color: #C1EE6C;
+    transition: all 0.4s;
+}
