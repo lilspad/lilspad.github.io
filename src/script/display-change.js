@@ -42,8 +42,8 @@ let bio = "Hi! 👋 I'm Lily, a software engineer learning, creating and enjoyin
 
 let skills = "I first came face-to-face with coding in school, where I did extracurricular computer science. I learned <span>Python</span> basics I still remember to this day. Then I began " +
 "a self-stufy journey in 2021, with many disruptions due to work-life (un)balance. Using resources across the web I learned how to build websites using <span>HTML, CSS/Sass and JavaScript</span>, " +
-"as well as their many extensions, libraries and frameworks. I played around with some projects utilising <span>React, Node, Tailwind, SQL and PHP</span> and more. For all of them, I use <span>git</span> version control " +
-"and <span>ChromeDevTools</span> to aid me in the building process, and <span>GitHub</span> to share my code. "
+"as well as their many extensions, libraries and frameworks. I played around with some projects utilising <span>React, Node, SQL, PHP</span> and more. For all of them, I use <span>git</span> version control " +
+"and <span>ChromeDevTools</span> to aid me in the building process, and GitHub to share my code. "
 
 function createInfoBox(title, info) {
     let infoBox = document.createElement('div');
