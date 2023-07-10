@@ -147,7 +147,7 @@ function createElement(project) {
     let element = document.createElement('div');
     element.classList.add('shape', 'project');
 
-    element.innerHTML = '<div class="project-content"><h3>' + project.name + '</h3><div class="buttons"><a href="' + project.src + '"target="blank" class="button source">Source</a><a href="' +
+    element.innerHTML = '<div class="project-content"><h3>' + project.name + '</h3><div class="buttons"><a href="' + project.src + '"target="_blank" class="button source">Source</a><a href="' +
     project.demo + '"target="blank" class="button demo">Demo</a></div></div>'; 
 
     return element;
