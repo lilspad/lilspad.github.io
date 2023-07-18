@@ -358,7 +358,7 @@ header .container {
     background-position: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 610px) {
     #hero {
         height: 90vh;
     }
