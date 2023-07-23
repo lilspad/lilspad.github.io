@@ -5,6 +5,7 @@ const heroDisplay = document.getElementById("hero-display");
 const shapes = document.getElementsByClassName("shape");
 const infoItems = document.getElementsByClassName("info-bit")
 const contact = document.querySelector(".contact h3");
+const findH3 = document.querySelector(".contact h3.white");
 const findMe = document.getElementById("findme");
 
 let theme = "light";
@@ -58,6 +59,7 @@ function setDark() {
     contact.style.color = "white";
     findMe.style.backgroundColor = v.accentColor2;
     findMe.style.color = "black";
+    findH3.style.color = "black";
 
 }
 
@@ -102,6 +104,7 @@ function setLight() {
     contact.style.color = "black";
     findMe.style.backgroundColor = "black";
     findMe.style.color = "white";
+    findH3.style.color = "white";
 }
 
 function setTheme() {

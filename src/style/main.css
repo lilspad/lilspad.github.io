@@ -402,6 +402,10 @@ header .container {
     color: black;
 }
 
+.contact h3.white {
+    color: white;
+}
+
 #form {
     height: 50%;
     padding: 1%;
