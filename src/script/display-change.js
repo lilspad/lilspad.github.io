@@ -114,9 +114,9 @@ about.addEventListener('click', () => {
 
 let projects = [];
 
-let names = ['Modest | eCommerce App', 'Doodle | Drawing App', 'Capricious | Website', 'KoiBoi | Mini Game'];
-let sources = ['https://github.com/lilspad/modest', 'https://github.com/lilspad/drawing-app', 'https://github.com/lilspad/capricious-garden', 'https://github.com/lilspad/KoiBoi'];
-let demos = ['https://modestskincare.netlify.app/', 'https://a-drawing-app-lilspad.vercel.app/', 'https://capricious.netlify.app/', 'https://koi-boi.herokuapp.com/'];
+let names = ['Modest | eCommerce App', 'Doodle | Drawing App', 'Booki | Mock-up', 'OhMyFood | Mock-up'];
+let sources = ['https://github.com/lilspad/modest', 'https://github.com/lilspad/drawing-app', 'https://github.com/lilspad/booki', 'https://github.com/lilspad/Paczesniak_Lily_2_16-08-23_A'];
+let demos = ['https://modestskincare.netlify.app/', 'https://a-drawing-app-lilspad.vercel.app/', 'https://lilspad.github.io/booki/', 'https://lilspad.github.io/Paczesniak_Lily_2_16-08-23_A/'];
 
 function createProject(name, src, demo) {
     return {
